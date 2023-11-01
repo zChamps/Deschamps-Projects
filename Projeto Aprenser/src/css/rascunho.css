@@ -1,0 +1,269 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#cabecalho{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(43,42,43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    
+}
+
+
+nav ul li:hover{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+a:link{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+
+
+
+
+
+#logo{
+    background-image: url(../imagens/logoAprenser.png);
+    width: 150px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0 0 0 150px;
+    
+    
+}
+
+.navegacao{
+    list-style-type: none;
+    color: #FED001;
+    display: inline-block;
+    padding: 12px 22px;
+    border: 2px solid #FED001;
+    cursor: pointer;
+    
+    
+}
+
+#parte1{
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(to bottom, #FFFEFF, #FFFE40);
+}
+
+#imagem-pt1{
+    background-image: url(../imagens/HeroImage.png);
+    float: right;
+    height: 75vh;
+    width: 60vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: -69px;
+    right: -30px;
+}
+
+#titulo{
+    font-size: 55px;
+    width:40vw;
+    padding: 80px 0 50px 65px;
+    margin: 65px 0 0 0
+}
+
+#saiba-mais{
+    background-color: #FED001;
+    padding: 15px 25px;
+    font-weight: bold;
+    margin-left: 65px;
+    margin-top: 25px;
+    cursor: pointer;
+    
+}
+
+#parte2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titulopt2{
+    font-size: 34px;
+    padding-top: 50px;
+    
+}
+
+#container-central{
+    /* background-color: aqua; */
+    display: flex;
+    gap: 25px;
+    
+}
+
+#img1{
+    background-image: url(../imagens/curso-design.png);
+    width: 300px;
+    height: 170px;
+}
+
+#img2{
+    background-image: url(../imagens/curso-design-1.png);
+    width: 300px;
+    height: 170px;
+}
+
+#img3{
+    background-image: url(../imagens/curso-design-2.png);
+    width: 300px;
+    height: 170px;
+}
+
+#design{
+    width: 300px;
+    height: 340px;
+    border: 1px solid rgba(44, 44, 44, 0.425);
+    border-radius: 13px;
+}
+
+#frontend{
+    width: 300px;
+    height: 340px;
+    border: 1px solid rgba(44, 44, 44, 0.425);
+    border-radius: 13px;
+    
+}
+
+#backend{
+    width: 300px;
+    height: 340px;
+    border: 1px solid rgba(44, 44, 44, 0.425);
+    border-radius: 13px;
+
+}
+
+.alinhamento{
+    margin: 20px auto auto 15px;
+}
+
+#ver-mais{
+    margin-top: 70px;
+    background-color:#FED001;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+#pt3{
+    width: 100%;
+    height: 60vh;
+    background-color: #003464;
+}
+
+#img4{
+    background-image: url(../imagens/nossa-escola.png);
+    float: left;
+    height: 55vh;
+    width: 55vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    right: -50px;
+    bottom: -35px;
+}
+
+#escola{
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+    padding-top: 35px;
+}
+
+#texto-inferior{
+    color: white;
+    font-size: 18px;
+    width: 90vw;
+}
+
+#pt4{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa{
+    background-image: url(../imagens/map.png);
+    width: 85vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+#contatos{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 55px 0;
+}
+
+#localidade{
+    width: 190px;
+    /* text-align: right; */
+    white-space: pre;
+}
+
+#container-pequeno{
+    display: flex;
+    align-items: flex-end;
+    width: 77%;
+    flex-direction: column;
+    position: relative;
+    bottom: 35px;
+    margin: 0;
+    
+}
+
+#rodape{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2A2B;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+}

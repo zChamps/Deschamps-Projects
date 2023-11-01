@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition: 0.3ms ease;
+}
+
+a{text-decoration: none;}
+
+@media (max-width: 800px){
+
+    .subtitulos{
+        font-size: 35px;
+        margin-top: 45px;
+    }
+
+    /*//////////////////////////// HEADER//////////////////////////////////// */
+
+    #container-header{
+        background-color: rgb(43,42,43);
+        /* color: rgb(255, 255, 255); */
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-sizing: border-box;
+        padding: 5px 40px;
+        width: 100vw;
+        
+    }
+
+
+    #subcontainer-header img{
+        width: 80px;
+        height: 50px;
+        padding-bottom: 5px;
+    }
+
+    #container-nav-links{
+        display: flex;
+    }
+    
+    #container-nav-links{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 45px;
+        position: absolute;
+        background-color: rgb(43,42,43);
+        /* background-color: aqua; */
+        height: 400px;
+        width: 250px;
+        top: 0px;
+        right: 0;
+        padding-right: 30px;
+        border-radius: 30px;
+    }
+    #container-nav-links a{
+        color: rgb(255, 255, 255);
+        padding: 10px 15px;
+        border-bottom: 1px solid white;
+        width: 200px;
+        text-align: right;
+        font-size: 20px;
+    }
+    #icone-close-nav{
+        fill: white;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    
+    .navegacao{
+        scroll-behavior: smooth;
+    }
+
+
+
+
+
+    /* /////////////////////// Hero //////////////////////// */
+
+
+    #hero-banner{
+        background-image: linear-gradient(to bottom, #FFFEFF, #FFFE40);
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0 0 25px;
+        box-sizing: border-box;
+    }
+    #imagem-pt1{
+        height: 50vh;
+        width: 200px;
+        background-image: url(../img/HeroImage.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #titulo{
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+
+    #saiba-mais{
+        padding: 10px 15px;
+        /* border: 1px solid black; */
+        background-color: #FED001;
+        width: fit-content;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    #hero-banner div{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+
+
+
+
+    /* ///////////////////////// CURSOS ////////////////////////////// */
+
+    #Cursos{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        gap: 25px;
+    }
+
+    #container-central{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .subcontainer-cards-cursos{
+        min-height: 150px;
+        
+        width: 100%;
+        display: flex;
+        /* background-color: red; */
+        align-items: center;
+        gap: 5px;
+        box-sizing: border-box;
+        /* padding: 0 5px 0 15px; */
+        border: 1px solid black;
+    }
+
+    .subcontainer-cards-cursos img{
+        width: 26%;
+        min-height: 150px;
+        flex-grow: 1;
+    }
+
+    .container-texto-cursos{
+        /* background-color: green; */
+        min-height: 150px;
+        width: 65%;
+        padding: 0 15px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 25px; */
+        box-sizing: border-box;
+        text-align: justify;
+        gap: 15px;
+        /* flex-grow: 1; */
+        
+    }
+
+    .container-texto-cursos h4{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #Cursos button{
+        padding: 10px 15px;
+        background-color: #FED001;
+        font-weight: bold;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    /* /////////////// NOSSA ESCOLA //////////////////// */
+
+    #NossaEscola{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        columns: white;
+        background-color: rgb(0, 52, 100);
+        padding: 0 35px 40px;
+        gap: 35px;
+        margin-top: 50px;
+    }
+
+    #NossaEscola img{
+        display: none;
+    }
+
+    #NossaEscola h2, #NossaEscola p{
+        color: white;
+    }
+
+    #NossaEscola p{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: justify;
+        text-justify: distribute;
+    }
+    
+    /* //////////////////////// CONTATOS ////////////////////////////// */
+
+    #Contatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15PX;
+        margin-bottom: 65PX;
+    }
+
+    #Contatos iframe{
+        width: 100%;
+    }
+
+    #container-pequeno{
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        padding-top: 25PX;
+    }
+
+/* //////////////////////// FOOTER ////////////////////////////// */
+    #rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100VW;
+        text-align: center;
+        background-color: #2B2A2B;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        height: 35px;
+    }
+}

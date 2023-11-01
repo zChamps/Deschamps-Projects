@@ -1,0 +1,1 @@
+Olá! Esse é um dos meus primeiros projetos, onde estava testando os conceitos de flexbox, alinhamento dos itens e responsividade.
