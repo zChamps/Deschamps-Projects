@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (min-width: 800px){
+    
+
+    body{
+        box-sizing: border-box;
+        /* overflow-x: hidden; */
+        transition: 0.3ms ease;
+    }
+    
+    a{text-decoration: none;}
+
+    .subtitulos{
+        font-size: 40px;
+        margin-top: 55px;
+    }
+    /* //////////////////// NAV ///////////////////// */
+    #icone-close-nav{
+        display: none;
+    }
+
+    #icone-menu{
+        display: none
+    }
+
+    #container-header{
+        background-color: rgb(43,42,43);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #container-header img{
+        width: 160px;
+        height: 80px;
+        padding-bottom: 5px;
+        padding-left: 50px;
+    }
+
+    #container-nav-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 500px;
+    }
+    #container-nav-links a{
+        padding: 10px 15px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        border-bottom: 2px solid transparent
+    }
+
+    /* ////////////////// HERO ///////////////////// */
+    
+    #hero-banner{
+        background-image: linear-gradient(to bottom, #FFFEFF, #FFFE40);
+        display: flex;
+        
+        padding: 50px 0 0 50px;
+        box-sizing: border-box;
+    }
+
+    #hero-banner div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+
+    #imagem-pt1{
+        height: 65vh;
+        width: 200px;
+        background-image: url(../img/HeroImage.png);
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #hero-banner h1{
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+
+    #saiba-mais{
+        padding: 10px 15px;
+        background-color: #FED001;
+        width: fit-content;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: left;
+        align-self: flex-start
+    }
+
+    
+
+    /* ///////////// CURSOS  //////////////////////// */
+
+
+    #Cursos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        gap: 25px;
+    }
+
+    #container-central{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 30px;
+
+    }
+
+    .subcontainer-cards-cursos{
+        min-height: 300px;
+        flex-direction: column;
+        min-width: 250PX;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        border: 1px solid rgba(0,0,0, 0.6);
+    }
+
+    .subcontainer-cards-cursos img{
+        width: 100%;
+        min-height: 150px;
+        flex-grow: 1;
+    }
+
+    .container-texto-cursos{
+        min-height: 150px;
+        width: 100%;
+        padding: 0 15px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: justify;
+        gap: 15px;
+        
+    }
+
+    .container-texto-cursos h4{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #Cursos button{
+        padding: 10px 15px;
+        background-color: #FED001;
+        font-weight: bold;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+
+    /* /////////////// NOSSA ESCOLA //////////////////// */
+
+    #NossaEscola{
+        display: flex;
+        align-items: center;
+        columns: white;
+        background-color: rgb(0, 52, 100);
+        padding: 0 35px 40px;
+        gap: 35px;
+        margin-top: 50px;
+    }
+
+    #NossaEscola div{
+        display: flex;
+        flex-direction: column;
+        padding: 25px 15px;
+        gap: 25px;
+    }
+
+    #NossaEscola img{
+        height: 250px;
+        width: 350px;
+        float: left;
+    }
+
+    #NossaEscola h2, #NossaEscola p{
+        color: white;
+    }
+
+    #NossaEscola p{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: justify;
+        text-justify: distribute;
+    }
+
+    /* //////////////////////// CONTATOS ////////////////////////////// */
+
+    #Contatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35PX;
+        margin-bottom: 65PX;
+    }
+
+    #Contatos iframe{
+        width: 80%;
+    }
+
+    #container-pequeno{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 80%;
+        padding-top: 25PX;
+        gap: 5px;
+    }
+
+/* //////////////////////// FOOTER ////////////////////////////// */
+    #rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100VW;
+        text-align: center;
+        background-color: #2B2A2B;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        height: 35px;
+    }
+
+}
