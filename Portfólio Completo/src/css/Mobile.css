@@ -154,7 +154,7 @@
     
 
     #container-hero-banner{
-        background-image: url(../img/estrutura-molecular-brilhante-em-cenario-de-galaxia-futurista-gerado-por-ia.svg);
+        background-image: url(../img/estrutura-molecular-brilhante-em-cenario-de-galaxia-futurista-gerado-por-ia.jpeg);
         width: 100vw;
         height: 559px;
         display: flex;
@@ -316,13 +316,16 @@
         align-items: center;
         /* justify-content: center; */
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
+        justify-content: center;
+
   
     }
     #subcontainer-frontend{
         display: flex;
         flex-direction: column;
         gap: 15px;
+        padding: 0 15px;
     }
     
     
@@ -330,24 +333,33 @@
     .container-projeto-frontend {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
         /* height: 700px; */
         /* background-color: chartreuse; */
     }
     
     .container-projeto-frontend img{
-        width: 100vw;
+        width: 92vw;
         /* max-width: 700px; */
         height: 300px;
     }
     
     .container-projeto-backend{
-        width: 400px;
+        width: 92vw;
         height: 700px;
         background-color: #C3D5E0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    
+        flex: 1;
+        align-items: center;
+        min-width: 350px;
+        box-sizing: border-box;
+        padding: 25px 15px;
+        
+        
     }
     
     .container-texto-projeto{
@@ -355,6 +367,7 @@
         padding: 30px;
         background-color: #C3D5E0;
         height:fit-content;
+        width: 92vw;
         /* border-top: 1px solid rgba(0, 0, 0, 0.062); */
     }
 
@@ -395,18 +408,10 @@
         gap: 30px;
         align-items: center;
         width: 100%;
+        /* background-color: aqua; */
     }
 
-    .container-projeto-backend{
-        flex: 1;
-        width: 100%;
-        align-items: center;
-        display: flex;
-        min-width: 350px;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding: 25px 15px;
-    }
+
 
     .container-projeto-backend div h1{
         text-transform: uppercase;
@@ -429,11 +434,12 @@
         align-items: center;
         position: relative;
         padding: 20px;
+        width: 93%;
     }
 
     .container-projeto-github{
         /* background-color: aqua; */
-        width: 90%;
+        width: 92vw;
         text-align: center;
         padding-top: 40px;
         padding-bottom: 40px;
