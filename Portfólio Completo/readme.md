@@ -1,0 +1,1 @@
+Olá! Seja bem-vindo(a) ao código do meu portfólio. Para o desenvolvimento desse projeto usei somente HTML, CSS e JavaScript.

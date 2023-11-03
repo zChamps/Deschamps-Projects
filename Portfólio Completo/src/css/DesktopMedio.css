@@ -1,0 +1,850 @@
+
+
+@media (min-width: 1250px) and (max-width: 1772px){
+    #seta-retornar-menu{
+        width: 30px; 
+        height: 30px; 
+        border: 3px solid black; 
+        border-radius: 50%;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        background-color: #f5f5f5;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    
+    body{
+        box-sizing: border-box;
+        font-family: 'League Spartan', sans-serif;
+        overflow-x: hidden;
+        background-color: #f5f5f5;
+    }
+    
+    .oculto{
+        display: none;
+    }
+
+    
+    .scroll-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .mouse {
+        width: 40px;
+        height: 60px;
+        border: 3px solid #C3D5E0;
+        border-radius: 30px;
+        position: relative;
+        animation: scroll 2s infinite, moveDown 2s infinite; 
+    }
+    
+    .wheel {
+        width: 8px;
+        height: 10px;
+        background: #C3D5E0;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(5px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes moveDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px); 
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    
+    
+    
+    #container-navbar-hamburger{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    
+    
+    #contato-nav-hamburguer{
+        display: none;
+    }
+    
+    #container-nav{
+        display: flex;
+        /* padding: 0px 90px; */
+        width: 100vw;
+        height: 900px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FF4B4B;
+        box-sizing: border-box;
+        flex-direction: column;
+        margin: 0;
+    }
+    #icone-close-nav{
+        display: none;
+    }
+    #subcontainer-nav-hero{
+        display: flex;
+        padding: 0 50px;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+        /* flex-direction: column; */
+        position:fixed;
+        z-index: 1;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #container-hero-banner img{
+        margin-bottom: 85px;
+    }
+    
+    #container-logo-nav{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    
+    .tamanho-icones{
+        width: 30px;
+        height: 30px;
+        
+    }
+
+    #icone-curriculo{
+        height: 27px;
+        width: 27px;
+        padding-bottom: 5px;
+    }
+    
+    #container-links-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        
+    }
+    
+    #container-logo-nav h4{
+        font-size: 30px;
+        padding-top: 5px;
+    }
+    #icone-menu{
+        display: none;
+    }
+    #container-logo-nav svg{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #container-links-nav a{
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px 5px 0;
+        border-bottom: 2px solid transparent;
+    }
+    
+    #container-links-nav a:hover{
+        border-bottom: 2px solid #fd0101;
+        
+        
+    }
+    
+    
+    
+    #container-icones-nav{
+        display: flex;
+        gap: 25px;
+        padding-right: 20px;
+    }
+    
+    #container-hero-banner{
+        background-image: url(../img/estrutura-molecular-brilhante-em-cenario-de-galaxia-futurista-gerado-por-ia.svg);
+        width: 100vw;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        mix-blend-mode: luminosity;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* gap: 320px */
+        /* z-index: 2; */
+    }
+    
+    
+    #nome-dev{
+        /* background-color: aqua; */
+        width: 100vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 196px;
+        /* background-color: aqua; */
+        height: 250px;
+        /* box-shadow: 10px 0px 500px 300px rgba(0, 0, 0, 1); */
+        
+        
+        
+    }
+    
+    #nome-dev h1{
+        color: #FDFDFD;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4.48px;
+        text-transform:uppercase;
+        
+    }
+    #nome-dev h2{
+        color: #FDFDFD;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        letter-spacing: -0.8px;
+        text-transform: uppercase;
+    }
+    
+    #container-sobremim{
+        display: flex;
+        width: 100vw;
+        /* background-color: aqua; */
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 80px;
+        
+    
+    }
+    #container-sobremim div h1{
+        color: #121212;
+        font-family: 'League Spartan', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.2px;
+        /* font-size: 85px; */
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    #subcontainer-sobremim{
+        /* display: flex; */
+        /* gap: 40px; */
+        align-items: center;
+        /* background-color: blue; */
+        width: 90vw;
+        max-width: 1800px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 25px;
+    }
+    
+    #subcontainer-sobremim p{
+        color: #2E2E2E;
+        width: 100%;
+        text-align: justify;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 1.92px;
+        /* padding: 35px 50px; */
+        
+    }
+    
+    
+    #subcontainer-sobremim img{
+        width: 250px;
+        height: 250px;
+        float: left;
+        margin-right: 40px;
+    }
+    
+    #container-projetos{
+        width: 100vw;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0 80px;
+        gap: 35px;
+        
+    }
+
+    #container-projetos h1{
+        color: #121212;
+        font-family: 'League Spartan', sans-serif;
+
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.2px;
+        padding-bottom: 30px;
+    }
+    
+    #subcontainer-projeto{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        /* justify-content: center; */
+        width: 100%;
+    }
+    
+    
+    
+    
+    .container-projeto-frontend {
+        
+        /* background-color: chartreuse; */
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: 0 50px;
+        width: 100vw;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        position: relative;
+        
+    }
+    
+    
+    .container-texto-projeto{
+        box-sizing: border-box;
+        padding: 50px;
+        height: 100%;
+        width: 70%;
+        background-color: #C3D5E0;
+        border-top: 1px solid rgba(0, 0, 0, 0.062);
+        
+    }
+    
+    .container-texto-projeto p{
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .container-projeto-frontend img:nth-of-type(1){
+        width: 400px;
+        /* max-width: 700px; */
+        height: 100%;
+    }
+
+    /* .links-projetos a svg{
+        width: 40px;
+        height: 40px; */
+    /* } */
+
+    .links-projetos{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .preto{
+        position: absolute;
+        margin: 15px;
+        left: 35px;
+        width: 400px;
+        height: 100%;
+        opacity: 0.8;   
+    }
+
+    #imagem1{
+        width: 422px;
+    }
+    
+    .container-texto-projeto h1{
+        text-transform: uppercase;
+    }
+
+/* //////////////////backend///////////////// */
+
+
+    .container-projeto-backend{
+        width: 400px;
+        height: 600px;
+        background-color: #C3D5E0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    
+    
+    
+    #subcontainer-backend{
+        display: flex;
+        gap: 30px;
+    }
+    
+    
+    .container-projeto-github:hover{
+        background-color: #99b4be;
+        border-radius: 50px;
+    }
+    
+
+
+
+    #subcontainer-backend{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        max-width: 3270px;
+        width: 100%;
+    }
+
+    .container-projeto-backend{
+        flex: 1;
+        align-items: center;
+        display: flex;
+        min-width: 350px;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 35px;
+    }
+
+    .container-projeto-backend div h1{
+        text-transform: uppercase;
+        /* background-color: aqua; */
+        font-size: 32px;
+    }
+
+    .container-projeto-backend div p{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .container-projeto-backend div a{
+        color: black;
+        font-weight: 600;
+    }
+    .subcontainer-backend-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+    }
+
+    .container-projeto-github{
+        /* background-color: aqua; */
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding: 40px 30px;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        text-transform: uppercase;
+        color: black;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        gap: 15px;
+        /* justify-content: center; */
+
+    }
+
+    .container-projeto-github a{
+        display: flex;
+        align-items: center;
+    }
+
+    .container-projeto-github a p{
+        padding-top: 10px;
+    }
+
+    .container-projeto-github svg{
+        height: 60px;
+        width: 60px;
+        padding-right: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    #container-servicos{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        /* max-width: 2300px; */
+        box-sizing: border-box;
+        padding: 30px 100px;
+        /* background-color: aqua; */
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        
+    }
+    #container-servicos h1{
+        color: #121212;
+        font-family: 'League Spartan', sans-serif;
+        /* font-size: 40px; */
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.2px;
+    }
+    
+    
+    #subcontainer-servicos{
+        display: flex;
+        /* background-color: red; */
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 2100px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+    
+    .container-servico{
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 350px;
+        margin: 25 0px;
+        box-sizing: border-box;
+        padding: 50px;
+        gap: 22px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        flex-basis: calc(50% - 10px);
+    }
+    
+    .container-servico img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .subcontainer-servico-imagem-titulo{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+    .subcontainer-servico-imagem-titulo h4{
+        color: #121212;
+        /* text-align: justify; */
+        font-family: 'League Spartan', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.92px;
+    }
+    
+    #container-servico p{
+        color: #2E2E2E;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+    
+    #container-habilidades{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        /* padding: 0 80px; */
+        margin-top: 50px;
+        /* gap: 50px; */
+    }
+    
+    
+    #subcontainer-habilidades{
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        
+    }
+    
+    #container-habilidades h1{
+        color: #000;
+        font-family: 'League Spartan', sans-serif;
+        /* font-size: 40px; */
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.2px;
+        margin-bottom: 15px;
+    }
+
+    .container-tecnologias-imagem p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 15px;
+        transition: color 0.4s ease;
+        color: transparent;
+    }
+
+    .container-tecnologias-imagem:hover p{
+        color: black;
+    }
+    
+    #tecnologias-ln1{
+        display: flex;
+        justify-content: center;
+        /* background-color: green; */
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 50px;
+        gap: 50px;
+    }
+    
+    #tecnologias-ln2{
+        display: flex;
+        justify-content: center;
+        /* background-color: green; */
+        width: 100%;
+  
+        box-sizing: border-box;
+        gap: 52px;
+        /* padding-right: 30px; */
+    }
+    
+    #container-entre-em-contato{
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 175px;
+        margin-bottom: 200px;
+    }
+    
+    #container-entre-em-contato p{
+        font-size: 45px;
+        color: rgb(135, 138, 143);
+        font-weight: 400;
+        letter-spacing: 5.6px;
+        line-height: 20px;
+        box-sizing: border-box;
+        padding: 30px 0;
+    }
+    
+    #container-entre-em-contato h1{
+        color: rgb(15, 20, 30);
+        font-size: 86PX;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-bottom 500ms ease;
+        border-bottom: 7px solid transparent;
+    }
+
+    #tituloPrincipalEntreEmContato{
+        transition: border-bottom 500ms ease;
+    }
+    
+    
+    #container-entre-em-contato h1:hover{
+        border-bottom: 7px solid black;
+    }
+    #container-entre-em-contato h1 a{
+        color: rgb(15, 20, 30);
+    }
+    
+    #container-entre-em-contato h1 svg{
+        width: 76px;
+        height: 76px;
+        padding-top: 25px;
+        box-sizing: border-box;
+    }
+    
+    
+
+
+
+    /*/////////////////////////////////////////////////////////////////////  */
+
+
+
+
+
+    #subcontainer-projeto{
+        /* background-color: green; */
+        display: flex;
+        width: 94vw;
+        /* flex-direction: row; */
+        box-sizing: border-box;
+    }
+
+    .subtitulo-projetos{
+        font-size: 30px;
+    }
+
+    #subcontainer-frontend{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 30px;
+        max-width: 3270px;
+        width: 100vw;
+        /* background-color: orange; */
+        padding-bottom: 100px;
+    }
+
+    
+
+    .subtitulos{
+        font-size: 50px;
+    }
+
+
+    .container-servico p{
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+
+
+    .org-habilidades img{
+        height: 80px;
+        width: 80px;
+        /* padding: 0 10px; */
+    }
+
+
+    #tecnologias-ln2{
+        width: 75%;
+    }
+    footer p{
+        font-size: 12px;
+        background-color: #e4e4e4;
+        width: 100vw;
+        text-align: center;
+        color: black;
+    }
+}
+
+@media (min-width: 1250px) and (max-width: 1500px){
+    #nome-dev h1{
+        font-size: 90px;
+    }
+    #nome-dev h2{
+        font-size: 60px;
+    }
+
+    .mouse {
+        width: 40px;
+        height: 65px;
+    }
+    
+    .wheel {
+        width: 6px;
+        height: 8px;
+    }
+
+    #container-links-nav a{
+        font-size: 28px;
+        padding: 20px 0;
+    }
+
+    
+}
+
+
+@media (min-width: 1501px) and (max-width: 1771px){
+    #container-links-nav a{
+        font-size: 24px;
+        padding: 5px 0;
+    }
+
+    .tamanho-icones{
+        width: 30px;
+        height: 30px;
+    }
+
+    #icone-curriculo{
+        height: 26px;
+        width: 26px;
+        padding-top: 3px;
+    }
+
+
+    #container-logo-nav h4{
+        font-size: 30px;
+        padding-top: 5px;
+    }
+
+
+    
+    #subcontainer-nav-hero{
+        padding: 15px 50px;
+
+}
+}
