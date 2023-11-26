@@ -27,7 +27,7 @@ li{
         max-width: 1650px;
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         margin: 0 auto;
         
     }
